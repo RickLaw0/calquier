@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .body {
+    font-size: 16px;
+    line-height: 24px;
+    background-color: white;
+  }
+
+  .contenedor_img{
+    justify-content: center;
+    border: 3px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+.logo{
+    margin-left: 130px;
+}
+
+.logo img {
+    width: 160px;
+    border: 3px;
+}
+
+#menu {
+    display: none;
+    justify-content:end;
+    align-items:flex-end;
+    width: 50px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+.caja_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style: none;
+    width: 800px;
+    border: 3px;
+    padding: 10px 0px 10px 15px;
+}
+
+.caja_menu li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.contenedor_img li a{
+    display: block;
+    padding: 10px 15px 10px 15px;
+    color:black;
+    text-decoration: none;
+    border-radius: 1px;
+}
+
+.ancho{
+    background-image: url(imagenes/foto_slide.jpg);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contnedor2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.contenedor2 h1{
+    color: white;
+    font-family: 'Noto Serif', serif ;
+    font-size: 35px;
+}
+
+.contenedor{
+    border: 3px;
+}
+
+.contenedor h5{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.contenedor h6{
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: chartreuse;
+}
+
+.ancho1{
+    max-width: 1300px;
+    margin: auto;
+    border: 1px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.consulta{
+    border: 2px;
+    width: 350px;
+    background: rgba(224, 224, 224, 0.774);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.consulta figure{
+    max-width: 150px;
+    margin: auto;
+}
+
+.consulta figure img{
+    width: 100%;
+}
+
+.consulta h4{
+    text-decoration: none;
+    padding: 15px;
+    border: 1px;
+    margin-top: -5px;
+    text-align: center;
+    color:chartreuse;
+    font-size: 20px;
+}
+
+.consulta p{
+    padding: 15px;
+    text-align: center;
+}
+
+.final{
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.final figure img{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+    #menu {
+      display: flex;
+    }
+    nav {
+        padding: 1px 0px;
+        position: relative;
+        display: none;
+      }
+      
+
+      nav ul {
+        
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 0px 10px;
+        background-color: rgba(0,0,0,.7);
+        z-index: 2;
+        /* display: none; */
+        top:100%;
+        left: -100%;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        transition: all 0.5s;
+      }
+
+      nav ul.abrirmenu {
+        left: 0px;
+      }
+      nav ul li {
+        border-bottom: 1px white dotted;
+        width: 100%;
+      }
+      nav ul li a {
+        display: block;
+      }
+
+
+
+      .ancho1 {
+        flex-direction: column;
+      }
+   
+}
